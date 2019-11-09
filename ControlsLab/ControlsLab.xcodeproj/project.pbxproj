@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C460909D23761EBF004F5686 /* CardGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460909C23761EBF004F5686 /* CardGenerator.swift */; };
+		C460909F237648A9004F5686 /* Suit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460909E237648A9004F5686 /* Suit.swift */; };
 		CDD21D0A2373252C005E6E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD21D092373252C005E6E32 /* AppDelegate.swift */; };
 		CDD21D0C2373252C005E6E32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD21D0B2373252C005E6E32 /* SceneDelegate.swift */; };
 		CDD21D0E2373252C005E6E32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD21D0D2373252C005E6E32 /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C460909C23761EBF004F5686 /* CardGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGenerator.swift; sourceTree = "<group>"; };
+		C460909E237648A9004F5686 /* Suit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suit.swift; sourceTree = "<group>"; };
 		CDD21D062373252C005E6E32 /* ControlsLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControlsLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD21D092373252C005E6E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDD21D0B2373252C005E6E32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				CDD21D092373252C005E6E32 /* AppDelegate.swift */,
 				CDD21D0B2373252C005E6E32 /* SceneDelegate.swift */,
 				CDD21D0D2373252C005E6E32 /* ViewController.swift */,
+				C460909E237648A9004F5686 /* Suit.swift */,
+				C460909C23761EBF004F5686 /* CardGenerator.swift */,
 				CDD21D0F2373252C005E6E32 /* Main.storyboard */,
 				CDD21D1223732531005E6E32 /* Assets.xcassets */,
 				CDD21D1423732531005E6E32 /* LaunchScreen.storyboard */,
@@ -201,8 +207,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDD21D0E2373252C005E6E32 /* ViewController.swift in Sources */,
+				C460909F237648A9004F5686 /* Suit.swift in Sources */,
 				CDD21D0A2373252C005E6E32 /* AppDelegate.swift in Sources */,
 				CDD21D0C2373252C005E6E32 /* SceneDelegate.swift in Sources */,
+				C460909D23761EBF004F5686 /* CardGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
