@@ -23,37 +23,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var suitLabel: UILabel!
     
-    var cardValue: Double = 2 {
+    var cardValue: Int = 2 {
         didSet {
             switch stepperItself.value {
             case 1.0:
-                cardValueLabel.text = "2"
-            case 2.0:
-                cardValueLabel.text = "3"
-            case 3.0:
-                cardValueLabel.text = "4"
-            case 4.0:
-                cardValueLabel.text = "5"
-            case 5.0:
-                cardValueLabel.text = "6"
-            case 6.0:
-                cardValueLabel.text = "7"
-            case 7.0:
-                cardValueLabel.text = "8"
-            case 8.0:
-                cardValueLabel.text = "9"
-            case 9.0:
-                cardValueLabel.text = "10"
-            case 10.0:
-                cardValueLabel.text = "J"
-            case 11.0:
-                cardValueLabel.text = "👸"
-            case 12.0:
-                cardValueLabel.text = "🤴"
-            case 13.0:
                 cardValueLabel.text = "A"
+            case 11.0:
+                cardValueLabel.text = "J"
+            case 12.0:
+                cardValueLabel.text = "👸"
+            case 13.0:
+                cardValueLabel.text = "🤴"
             default:
-                cardValueLabel.text = "not exist"
+                cardValueLabel.text = String(cardValue)
             }
         }
     }
@@ -77,22 +59,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        stepperItself.value = 2.0
         cardDisplayArea.layer.borderColor = UIColor.black.cgColor
+        cardDisplayArea.layer.borderWidth = 1.0
     }
     
-    func configureStepper() {
-           stepperItself.minimumValue = 1.0
-           stepperItself.maximumValue = 13.0
-           stepperItself.stepValue = 1.0
-           
-           // default start value
-           stepperItself.value = 1.0
-       }
-    
-    @IBAction func actionToSelectSuit(_ sender: UISegmentedControl) {
+    @IBAction func segmentedControlChanged(_ sender: UISegmentedControl) {
+        suitView = sender.selectedSegmentIndex
     }
+    
     @IBAction func actionToSelectValue(_ sender: UIStepper) {
+        cardValue = Int(sender.value)
     }
     
     
