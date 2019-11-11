@@ -96,7 +96,7 @@
                     <connections>
                         <outlet property="cardDisplayArea" destination="C1h-xN-8Yo" id="axx-mb-jRH"/>
                         <outlet property="cardValueLabel" destination="KIC-j1-A92" id="632-QH-eIu"/>
-                        <outlet property="changeSuite" destination="ZHy-qO-VK9" id="C9C-Jq-14P"/>
+                        <outlet property="changeSuit" destination="ZHy-qO-VK9" id="C9C-Jq-14P"/>
                         <outlet property="labelForGameName" destination="jup-ey-TLX" id="cWy-QE-dkG"/>
                         <outlet property="labelForSteppe" destination="JGS-tt-e6d" id="NKd-xF-oaH"/>
                         <outlet property="labelToSelectTheSuit" destination="tqt-aV-zZO" id="82P-mG-HZ9"/>
