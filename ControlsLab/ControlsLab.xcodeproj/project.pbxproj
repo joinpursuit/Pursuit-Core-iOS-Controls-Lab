@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		CDD21D0A2373252C005E6E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD21D092373252C005E6E32 /* AppDelegate.swift */; };
 		CDD21D0C2373252C005E6E32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD21D0B2373252C005E6E32 /* SceneDelegate.swift */; };
-		CDD21D0E2373252C005E6E32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD21D0D2373252C005E6E32 /* ViewController.swift */; };
+		CDD21D0E2373252C005E6E32 /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD21D0D2373252C005E6E32 /* PracticeViewController.swift */; };
 		CDD21D112373252C005E6E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD21D0F2373252C005E6E32 /* Main.storyboard */; };
 		CDD21D1323732531005E6E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDD21D1223732531005E6E32 /* Assets.xcassets */; };
 		CDD21D1623732531005E6E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD21D1423732531005E6E32 /* LaunchScreen.storyboard */; };
 		CDD21D2123732532005E6E32 /* ControlsLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD21D2023732532005E6E32 /* ControlsLabTests.swift */; };
+		E1D87CAB23A561080093F181 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D87CAA23A561080093F181 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,7 @@
 		CDD21D062373252C005E6E32 /* ControlsLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControlsLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD21D092373252C005E6E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDD21D0B2373252C005E6E32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CDD21D0D2373252C005E6E32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDD21D0D2373252C005E6E32 /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
 		CDD21D102373252C005E6E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDD21D1223732531005E6E32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDD21D1523732531005E6E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 		CDD21D1C23732532005E6E32 /* ControlsLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControlsLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD21D2023732532005E6E32 /* ControlsLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsLabTests.swift; sourceTree = "<group>"; };
 		CDD21D2223732532005E6E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D87CAA23A561080093F181 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,8 @@
 			children = (
 				CDD21D092373252C005E6E32 /* AppDelegate.swift */,
 				CDD21D0B2373252C005E6E32 /* SceneDelegate.swift */,
-				CDD21D0D2373252C005E6E32 /* ViewController.swift */,
+				CDD21D0D2373252C005E6E32 /* PracticeViewController.swift */,
+				E1D87CAA23A561080093F181 /* ViewController.swift */,
 				CDD21D0F2373252C005E6E32 /* Main.storyboard */,
 				CDD21D1223732531005E6E32 /* Assets.xcassets */,
 				CDD21D1423732531005E6E32 /* LaunchScreen.storyboard */,
@@ -200,8 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDD21D0E2373252C005E6E32 /* ViewController.swift in Sources */,
+				CDD21D0E2373252C005E6E32 /* PracticeViewController.swift in Sources */,
 				CDD21D0A2373252C005E6E32 /* AppDelegate.swift in Sources */,
+				E1D87CAB23A561080093F181 /* ViewController.swift in Sources */,
 				CDD21D0C2373252C005E6E32 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
