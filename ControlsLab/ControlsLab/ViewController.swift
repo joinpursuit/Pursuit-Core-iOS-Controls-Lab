@@ -1,40 +1,31 @@
+//
+//  ViewController.swift
+//  ControlsLab
+//
+//  Created by Ahad Islam on 12/14/19.
+//  Copyright © 2019 Benjamin Stone. All rights reserved.
+//
+
 import UIKit
 
 class ViewController: UIViewController {
     
-    private lazy var loginContentView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemGray
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
+    private lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Card Generator"
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 40)
+        return label
     }()
     
-    private lazy var userNameTextField: UITextField = {
-        let textField = UITextField()
-        textField.backgroundColor = .white
-        textField.borderStyle = .bezel
-        textField.placeholder = "Enter username..."
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        return textField
-    }()
-    
-    private lazy var passwordTextField: UITextField = {
-        let textField = UITextField()
-        textField.backgroundColor = .white
-        textField.borderStyle = .bezel
-        textField.placeholder = "Enter password..."
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        return textField
-    }()
-    
-    private lazy var loginButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = .systemBlue
-        button.setTitle("Login", for: .normal)
-        button.layer.cornerRadius = 5
-        button.clipsToBounds = true
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
+    private lazy var faceSegmentedControl: UISegmentedControl = {
+        let segmentControl = UISegmentedControl()
+        segmentControl.insertSegment(withTitle: "♠️", at: segmentControl.numberOfSegments, animated: true)
+        segmentControl.insertSegment(withTitle: "❤️", at: segmentControl.numberOfSegments, animated: true)
+        segmentControl.insertSegment(withTitle: "♣️", at: segmentControl.numberOfSegments, animated: true)
+        segmentControl.insertSegment(withTitle: "♦️", at: segmentControl.numberOfSegments, animated: true)
+        segmentControl.selectedSegmentIndex = 0
+        return segmentControl
     }()
     
     override func viewDidLoad() {
@@ -43,47 +34,29 @@ class ViewController: UIViewController {
     }
     
     private func configureView() {
-        view.backgroundColor = .systemPink
-        setUpLoginContextView()
-        setUpUserNameTextField()
-        setUpPasswordTextField()
-        setUpLoginButton()
+        view.backgroundColor = .systemGreen
+        setupFaceSegmentedControl()
+        setupTitleLabel()
     }
     
-    private func setUpLoginContextView() {
-        view.addSubview(loginContentView)
+    private func setupFaceSegmentedControl() {
+        view.addSubview(faceSegmentedControl)
+
+        faceSegmentedControl.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            loginContentView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            loginContentView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            loginContentView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            loginContentView.heightAnchor.constraint(equalToConstant: view.frame.height/3)])
+            faceSegmentedControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            faceSegmentedControl.centerYAnchor.constraint(equalTo: view.centerYAnchor)])
+        print(faceSegmentedControl.frame.width)
+        print(faceSegmentedControl.numberOfSegments)
     }
     
-    private func setUpUserNameTextField() {
-        loginContentView.addSubview(userNameTextField)
+    private func setupTitleLabel() {
+        view.addSubview(titleLabel)
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            userNameTextField.topAnchor.constraint(equalTo: loginContentView.topAnchor, constant: 20),
-            userNameTextField.leadingAnchor.constraint(equalTo: loginContentView.leadingAnchor, constant: 20),
-            userNameTextField.trailingAnchor.constraint(equalTo: loginContentView.trailingAnchor, constant: -20),
-            userNameTextField.heightAnchor.constraint(equalToConstant: 50)])
-    }
-    
-    private func setUpPasswordTextField() {
-        loginContentView.addSubview(passwordTextField)
-        NSLayoutConstraint.activate([
-            passwordTextField.leadingAnchor.constraint(equalTo: loginContentView.leadingAnchor, constant: 20),
-            passwordTextField.trailingAnchor.constraint(equalTo: loginContentView.trailingAnchor, constant: -20),
-            passwordTextField.heightAnchor.constraint(equalToConstant: 50),
-            passwordTextField.topAnchor.constraint(equalTo: userNameTextField.bottomAnchor, constant: 20)])
-    }
-    
-    private func setUpLoginButton() {
-        loginContentView.addSubview(loginButton)
-        NSLayoutConstraint.activate([
-            loginButton.widthAnchor.constraint(equalToConstant: view.frame.width / 3),
-            loginButton.centerXAnchor.constraint(equalTo: loginContentView.centerXAnchor),
-            loginButton.heightAnchor.constraint(equalToConstant: 50),
-            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20)])
+            titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor)])
     }
 }
-
